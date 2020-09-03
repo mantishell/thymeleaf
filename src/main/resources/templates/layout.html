@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${title}]]</title>
+</head>
+<body>
+    <div th:text="${title}">取值的另外一种方式</div>
+    <header>布局头</header>
+    <div th:replace="::content(title)">正文(接收的参数...)</div>
+    <footer>布局尾</footer>
+</body>
+</html>

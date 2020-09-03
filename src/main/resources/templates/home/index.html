@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns:th="http://www.thymeleaf.org" th:replace="layout">
+<body>
+忽略的文字
+<div th:fragment="content(${title})" class="first div in fragment">
+    正文的具体内容
+    <script th:online="javascript">
+        //这里写js代码
+    </script>
+</div>
+</body>
+</html>
